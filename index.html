@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Etérea</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&family=Roboto+Slab:wght@400;700&display=swap');
+
+        /* Fondo tipo pared más sutil */
+        body {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Nueva textura más suave */
+            background-size: cover;
+        }
+
+        /* Título estilo graffiti NY */
+        h1 {
+            font-family: 'Ribeye Marrow', cursive;
+            font-size: 42px;
+            color: #d32f2f; /* Rojo intenso */
+            text-transform: uppercase;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 
+                         4px 4px 12px rgba(255, 0, 0, 0.4); /* Sombras y efecto de spray */
+            letter-spacing: 2px;
+            opacity: 0;
+            animation: aparecer 1.5s ease-out forwards;
+        }
+
+        /* Fragmentos de texto con animación */
+        p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+            opacity: 0;
+            animation: aparecer 1.5s ease-out 0.5s forwards;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .fragmento {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        /* Efecto al pasar el mouse */
+        .fragmento:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+        }
+
+        /* Animación de aparición */
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bitácora Etérea</h1>
+        <p><em>"Ideas flotando en el éter, pensamientos que toman forma y se desvanecen."</em></p>
+        <div class="fragmento">
+            <p>Aquí irá tu primer fragmento de texto...</p>
+        </div>
+    </div>
+</body>
+</html>
